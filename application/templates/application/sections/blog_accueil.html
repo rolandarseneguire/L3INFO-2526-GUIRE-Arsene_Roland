@@ -1,0 +1,89 @@
+{% load static %}
+        <!-- BLOG STARTS
+            ========================================================================= -->
+        <section class="blog light-brown-bg" id="blog">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="herotext text-center  animated" data-animation="fadeInUp" data-animation-delay="100">
+                            <div class="lrline pb-3"><span>{{ blog.titre }}</span></div>
+                            <h2>{{ blog.sousTitre }}</h2>
+                            <h5 class="pt-2">{{ blog.motivation }}</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-5 g-0 g-lg-5">
+                    <div class="col-12 col-md-4">
+                        <div class="blog-post  animated" data-animation="fadeInUp" data-animation-delay="300">
+                            <div class="pic pb-4"><img src="{{ blog.image1.url }}" class="img-fluid" alt=""></div>
+                            <h4><a href="blog.html">{{ blog.vers }}</a></h4>
+                            <h2>{{ blog.nom1 }}</h2>
+                            <p>{{ blog.contenu1 }}</p>
+                            <ul class="meta">
+                                <li>
+                                    <a href=""><i class="las la-user-alt"></i>{{ blog.nom1 }}</a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="las la-calendar"></i>{{ blog.date1 }}</a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="lar la-comment"></i>{{ blog.nombre_commentaire }}</a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="lar la-eye"></i> {{ blog.nombre_vue }}K</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="blog-post  animated" data-animation="fadeInUp" data-animation-delay="500">
+                            <div class="pic pb-4"><img src="{{ blog.image2.url }}" class="img-fluid" alt=""></div>
+                            <h4><a href="blog.html">{{ blog.vers}}</a></h4>
+                            <h2>{{ blog.nom2}}</h2>
+                            <p>{{ blog.contenu2}}</p>
+                            <ul class="meta">
+                                <li>
+                                    <a href=""><i class="las la-user-alt"></i>{{ blog.auteur2}}</a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="las la-calendar"></i>{{ blog.date2}}</a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="lar la-comment"></i>{{ blog.nombre_commentaire2}}</a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="lar la-eye"></i>{{ blog.nombre_vue2}}K</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="blog-post  animated" data-animation="fadeInUp" data-animation-delay="700">
+                            <div class="pic pb-4"><img src="{{ blog.image2.url}}" class="img-fluid" alt=""></div>
+                            <h4><a href="blog.html">{{ blog.vers}}</a></h4>
+                            <h2><a href="single-blog-post-without-sidebar.html">{{ blog.nom3}}</a></h2>
+                            <p>{{ blog.contenu3}}</p>
+                            <ul class="meta">
+                                <li>
+                                    <a href=""><i class="las la-user-alt"></i>{{ blog.auteur3}}</a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="las la-calendar"></i>{{ blog.date3}}</a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="lar la-comment"></i>{{ blog.nombre_commentaire3}}</a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="lar la-eye"></i> {{ blog.nombre_vue}}K</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-3 pt-lg-5">
+                    <div class="col-12 text-center  animated" data-animation="fadeInUp" data-animation-delay="900"><a href="blog.html" class="btn btn-primary">{{ blog.vers}}</a></div>
+                </div>
+            </div>
+        </section>
+        <!-- /.. BLOG ENDS
+            ========================================================================= -->

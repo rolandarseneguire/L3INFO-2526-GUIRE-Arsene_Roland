@@ -1,0 +1,35 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Main CSS -->
+        <link href=" {%static 'application/assets/css/main.css'%}" rel="stylesheet" >
+        <title>Logistics & transportation shipping website template</title>
+    </head>
+    <body data-bs-spy="scroll" data-bs-target="#navigation">
+
+{% include 'application/partiels/preloader.html' %}
+
+
+{% include 'application/partiels/menu.html' %}
+
+
+{% block 'contenu_principal'%}
+
+
+{% endblock %}
+
+{% include 'application/partiels/footer.html' %}
+
+<a href="#top" class="back-to-top"><i class="las la-angle-up"></i></a>
+
+
+{% block 'script' %}
+
+{% endblock %}
+    </body>
+</html>
+

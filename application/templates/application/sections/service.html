@@ -1,0 +1,80 @@
+{% load static %}
+        <!-- SERVICES STARTS
+            ========================================================================= -->
+        <section class="home-services pt-4 pb-4" id="services">
+            <div class="container-fluid">
+                <div class="row  pb-5">
+                    <div class="col-12">
+                        <div class="herotext text-center animated" data-animation="fadeInUp" data-animation-delay="100" >
+                            <div class="lrline pb-3"><span>{{ service.titre}}</span></div>
+                            <h2>{{ service.sousTitre1 }},<br>{{ service.sousTitre2 }} </h2>
+                            <h5 class="pt-2">{{ service.motivation}}</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-carousel animated" data-animation="fadeInUp" data-animation-delay="300">
+                    <div class="block">
+                        <div class="info">
+                            <h2>{{ Service.nom1}}</h2>
+                            <div class="description">{{ service.description1}}</div>
+                            <a href="services-detail.html">{{ service.bouton}}</a>
+                        </div>
+                        <div class="picture">
+                            <img src="{{ service.image1.url}}" class="img-fluid pic" alt="">
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="info">
+                            <h2>{{ Service.nom2}}</h2>
+                            <div class="description">{{ service.description2}}</div>
+                            <a href="services-detail.html">{{ service.bouton}}</a>
+                        </div>
+                        <div class="picture">
+                            <img src="{{ service.image2.url}}" class="img-fluid pic" alt="">
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="info">
+                            <h2>{{ service.nom3}}</h2>
+                            <div class="description">{{ service.description3}}</div>
+                            <a href="services-detail.html">{{ service.bouton}}</a>
+                        </div>
+                        <div class="picture">
+                            <img src="{{ service.image3.url}}" class="img-fluid pic" alt="">
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="info">
+                            <h2>{{ service.nom4}}</h2>
+                            <div class="description">{{ service.description4}}</div>
+                            <a href="services-detail.html">{{ service.bouton}}</a>
+                        </div>
+                        <div class="picture">
+                            <img src="{{ service.image4.url}}" class="img-fluid pic" alt="">
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="info">
+                            <h2>{{ service.nom5}}</h2>
+                            <div class="description">{{ service.description5}}</div>
+                            <a href="services-detail.html">{{ service.bouton}}</a>
+                        </div>
+                        <div class="picture">
+                            <img src="{{ service.image5.url}}" class="img-fluid pic" alt="">
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="info">
+                            <h2>{{ Service.nom6}}</h2>
+                            <div class="description">{{ service.description6}}</div>
+                            <a href="services-detail.html">{{ service.bouton}}</a>
+                        </div>
+                        <div class="picture">
+                            <img src="{{ service.image6.url}}" class="img-fluid pic" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /.. SERVICES ENDS
+            ========================================================================= -->

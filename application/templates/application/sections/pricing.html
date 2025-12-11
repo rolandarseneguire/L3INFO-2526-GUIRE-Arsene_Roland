@@ -1,0 +1,74 @@
+{% load static %}
+        <!-- PRICING STARTS
+            ========================================================================= -->
+        <section class="pricing" id="pricing">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="herotext text-center  animated" data-animation="fadeInUp" data-animation-delay="100">
+                            <div class="lrline pb-3"><span>{{ pricing.titre }}</span></div>
+                            <h2>{{ pricing.sousTitre }}</h2>
+                            <h5 class="pt-2">{{ pricing.motivation }}</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-5 g-0 g-lg-5">
+                    <div class="col col-md-4 text-start">
+                        <div class="block  animated" data-animation="fadeInUp" data-animation-delay="300">
+                            <div class="herotext p-4 pb-2">
+                                <h4>{{pricing.niveau1 }}</h4>
+                                <h2>{{pricing.prix1 }}<span>{{pricing.par}}</span></h2>
+                                <p>{{pricing.avantage }}</p>
+                            </div>
+                            <ul class="pt-4">
+                                <li><i class="lar la-check-circle"></i> {{ pricing.nombre_projet2 }}</li>
+                                <li><i class="lar la-check-circle"></i> {{ pricing.espace1 }}</li>
+                                <li><i class="lar la-check-circle"></i> {{ pricing.utilisateur }}</li>
+                                <li><i class="lar la-check-circle"></i> {{ pricing.temps }}</li>
+                                <li><i class="lar la-check-circle"></i> {{ pricing.discution }}</li>
+                                <li>&nbsp;</li>
+                            </ul>
+                            <div><a href="#" class="btn btn-primary w-100 mt-3">{{ pricing.bouton }}</a></div>
+                        </div>
+                    </div>
+                    <div class="col col-md-4 text-start">
+                        <div class="block best  animated" data-animation="fadeInUp" data-animation-delay="500">
+                            <div class="herotext p-4  pb-2">
+                                <h4>{{ pricing.niveau2 }}</h4>
+                                <h2>{{ pricing.prix2 }}<span>{{ pricing.par }}</span></h2>
+                                <p>{{ pricing.avantage }}</p>
+                            </div>
+                            <ul class="pt-4">
+                                <li><i class="lar la-check-circle"></i> {{ pricing.nombre_projet2 }}</li>
+                                <li><i class="lar la-check-circle"></i>{{ pricing.espace2 }}</li>
+                                <li><i class="lar la-check-circle"></i> {{ pricing.utilisateur }}</li>
+                                <li><i class="lar la-check-circle"></i> {{ pricing.temps }}</li>
+                                <li><i class="lar la-check-circle"></i> {{ pricing.securite }}</li>
+                                <li><i class="lar la-check-circle"></i> {{ pricing.discution }}</li>
+                            </ul>
+                            <div><a href="#" class="btn btn-primary w-100 mt-3">{{ pricing.bouton }}</a></div>
+                        </div>
+                    </div>
+                    <div class="col col-md-4  text-start">
+                        <div class="block  animated" data-animation="fadeInUp" data-animation-delay="700">
+                            <div class="herotext p-4 pb-2">
+                                <h4>{{ pricing.niveau3 }}</h4>
+                                <h2>{{ pricing.prix3 }}<span>{{ pricing.par }}</span></h2>
+                                <p>{{ pricing.avantage }}</p>
+                            </div>
+                            <ul class="pt-4">
+                                 <li><i class="lar la-check-circle"></i>{{pricing.nombre_projet3 }}</li>
+                                <li><i class="lar la-check-circle"></i>{{ pricing.espace3 }}</li>
+                                <li><i class="lar la-check-circle"></i> {{ pricing.utilisateur }}</li>
+                                <li><i class="lar la-check-circle"></i> {{ pricing.temps }}</li>
+                                <li><i class="lar la-check-circle"></i> {{ pricing.securite }}</li>
+                                <li><i class="lar la-check-circle"></i> {{ pricing.discution }}</li>
+                            </ul>
+                            <div><a href="#" class="btn btn-primary w-100 mt-3">{{ pricing.bouton }}</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /.. PRICING ENDS
+            ========================================================================= -->

@@ -1,0 +1,51 @@
+{% load static %}
+        <!-- TESTIMONIALS STARTS
+            ========================================================================= -->
+        <section class="testimonials">
+            <div class="container">
+                <div class="row align-items-start align-items-md-center">
+                    <div class="col-12 col-lg-6 col-xl-6  testimonials-block" >
+                        <div class="herotext  animated" data-animation="fadeInUp" data-animation-delay="100">
+                            <div class="rightline pb-3"><span>{{ testimoni.tire}}</span></div>
+                            <h2>{{ testimonial.sousTire}}</h2>
+                        </div>
+                        <div class="testimonials-carousel pt-4   animated" data-animation="fadeInUp" data-animation-delay="300">
+                            <div class="testimonial">
+                                <div class="d-flex align-items-center">
+                                    <div class="pic"><img src="{{ testimonial.image1.url}}" class="img-fluid" alt=""></div>
+                                    <div class="detail">
+                                        <div class="name">{{ testimonial.client1}}</div>
+                                        <div class="designation">{{ testimonial.provenance1}}</div>
+                                    </div>
+                                </div>
+                                <p class="pt-3">“{{ testimonial.temoignage1}}”</p>
+                            </div>
+                            <div class="testimonial">
+                                <div class="d-flex align-items-center">
+                                    <div class="pic"><img src="{{ testimonial.image2.url}}" class="img-fluid" alt=""></div>
+                                    <div class="detail">
+                                        <div class="name">{{ testimonial.client2}}</div>
+                                        <div class="designation">{{ testimonial.provenance2}}</div>
+                                    </div>
+                                </div>
+                                <p class="pt-3">“{{ testimonial.temoignage2}}”</p>
+                            </div>
+                            <div class="testimonial">
+                                <div class="d-flex align-items-center">
+                                    <div class="pic"><img src="{{ testimonial.image3.url}}" class="img-fluid" alt=""></div>
+                                    <div class="detail">
+                                        <div class="name">{{ testimonial.client3}}</div>
+                                        <div class="designation">{{ testimonial.provenance3}}</div>
+                                    </div>
+                                </div>
+                                <p class="pt-3">“{{ testimonial.temoignage3}}"”</p>
+                            </div>
+                        </div>
+                        <!--<div class="slider-counter"></div>-->
+                    </div>
+                    <div class="col-12 col-lg-6 col-xl-6 pe-3 ps-3 animated" data-animation="fadeInUp" data-animation-delay="400"><img src="{{ testimonial.image.url}}"" class="img-fluid" alt=""></div>
+                </div>
+            </div>
+        </section>
+        <!-- /.. TESTIMONIALS ENDS
+            ========================================================================= -->

@@ -1,0 +1,25 @@
+
+{% extends 'base.html' %}
+
+    {% block 'contenu_principal' %}
+        {% include 'application/sections/slider.html' %}
+        {% include 'application/sections/about_accueil.html'%}
+        {% include 'application/sections/service.html' %}
+        {% include 'application/sections/feature.html' %}
+        {% include 'application/sections/parallax.html' %}
+        {% include 'application/sections/portfolio.html' %}
+        {% include 'application/sections/team.html' %}
+        {% include 'application/sections/pricing.html' %}
+        {% include 'application/sections/blog_accueil.html'%}
+        {% include 'application/sections/testimonial.html'%}
+        {% include 'application/sections/client.html' %}
+        {% include 'application/sections/video.html' %}
+        {% include 'application/sections/join.html' %}
+
+    {% endblock %}
+
+{% block 'script' %}
+
+        {% include 'APPLICATION/PARTIELS/script_index.html' %}
+
+{% endblock %}

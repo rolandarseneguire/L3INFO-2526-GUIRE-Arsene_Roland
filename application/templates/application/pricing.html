@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+    {% block 'contenu_principal' %}
+        {% include 'application/sections/banner.html' %}
+        {% include 'application/sections/pricing.html'%}
+        {% include 'application/sections/testimonial.html' %}
+
+    {% endblock %}
+
+{% block 'script' %}
+
+        {% include 'application/partiels/script.html' %}
+
+{% endblock %}

@@ -1,0 +1,82 @@
+{% load static %}
+        <!-- TEAM STARTS
+            ========================================================================= -->
+        <section class="team light-brown-bg mt-3" id="team">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="herotext text-center pb-5  animated" data-animation="fadeInUp" data-animation-delay="200">
+                            <div class="lrline pb-3"><span>{{ team.titre}}</span></div>
+                            <h2>{{ team.sousTitre}}</h2>
+                            <h5 class="pt-2">{{ team.motivation}}</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-carousel animated" data-animation="fadeInUp" data-animation-delay="300">
+                    <div class="block">
+                        <div class="pic pb-4"><img src="{{ team.photo1.url }}" class="img-fluid" alt=""></div>
+                        <div class="details">
+                            <h2>{{ team.prenom1}}</h2>
+                            <h6>{{ team.role1}}</h6>
+                            <ul class="socialmedia pt-2">
+                                <li><a href=""><i class="lab la-twitter"></i></a></li>
+                                <li><a href=""><i class="lab la-facebook-f"></i></a></li>
+                                <li><a href=""><i class="lab la-dribbble"></i></a></li>
+                                <li><a href=""><i class="lab la-behance"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="pic pb-4"><img src="{{ team.photo2.url }}" class="img-fluid" alt=""></div>
+                        <div class="details">
+                            <h2>{{ team.prenom2}}</h2>
+                            <h6>{{ team.role2}}</h6>
+                            <ul class="socialmedia pt-2">
+                                <li><a href=""><i class="lab la-linkedin-in"></i></a></li>
+                                <li><a href=""><i class="lab la-twitter"></i></a></li>
+                                <li><a href=""><i class="lab la-facebook-f"></i></a></li>
+                                <li><a href=""><i class="lab la-dribbble"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="pic pb-4"><img src="{{ team.photo3.url }}" class="img-fluid" alt=""></div>
+                        <div class="details">
+                            <h2>{{ team.prenom3}}</h2>
+                            <h6>{{ team.role3}}</h6>
+                            <ul class="socialmedia pt-2">
+                                <li><a href=""><i class="lab la-twitter"></i></a></li>
+                                <li><a href=""><i class="lab la-facebook-f"></i></a></li>
+                                <li><a href=""><i class="lab la-dribbble"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="pic pb-4"><img src="{{ team.photo4.url }}" class="img-fluid" alt=""></div>
+                        <div class="details">
+                            <h2>{{ team.prenom4}}</h2>
+                            <h6>{{ team.role4}}</h6>
+                            <ul class="socialmedia pt-2">
+                                <li><a href=""><i class="lab la-twitter"></i></a></li>
+                                <li><a href=""><i class="lab la-facebook-f"></i></a></li>
+                                <li><a href=""><i class="lab la-dribbble"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="pic pb-4"><img src="{{ team.photo5.url}}" class="img-fluid" alt=""></div>
+                        <div class="details">
+                            <h2>{{ team.prenom5}}</h2>
+                            <h6>{{ team.role5}}</h6>
+                            <ul class="socialmedia pt-2">
+                                <li><a href=""><i class="lab la-twitter"></i></a></li>
+                                <li><a href=""><i class="lab la-facebook-f"></i></a></li>
+                                <li><a href=""><i class="lab la-dribbble"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /.. TEAM ENDS
+            ========================================================================= -->
