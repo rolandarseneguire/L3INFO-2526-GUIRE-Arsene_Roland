@@ -450,6 +450,7 @@ class PricingAdmin(admin.ModelAdmin):
         "bouton",
         "niveau1", "prix1", "nombre_projet1", "espace1", "securite",
         "niveau2", "prix2", "nombre_projet2", "espace2",
+        "niveau3", "prix3", "nombre_projet3", "espace3",
     )
 
     # Champs éditables directement dans la liste
@@ -488,6 +489,10 @@ class PricingAdmin(admin.ModelAdmin):
         }),
         ("Niveau 2", {
             "fields": ("niveau2", "prix2", "nombre_projet2", "espace2"),
+            "description": "Détails du deuxième niveau de prix"
+        }),
+        ("Niveau 2", {
+            "fields": ("niveau3", "prix3", "nombre_projet3", "espace3"),
             "description": "Détails du deuxième niveau de prix"
         }),
     )
@@ -536,15 +541,15 @@ class BlogaccueilAdmin(admin.ModelAdmin):
             "description": "Informations générales de la section Blogaccueil"
         }),
         ("Blog 1", {
-            "fields": ("image1", "nom1", "contenu1", "auteur1", "date1", "nombre_commentaire1", "nombre_vue1"),
+            "fields": ("image1", "nom1", "contenu1", "auteur1", "nombre_commentaire1", "nombre_vue1"),
             "description": "Premier article du blog"
         }),
         ("Blog 2", {
-            "fields": ("image2", "nom2", "contenu2", "auteur2", "date2", "nombre_commentaire2", "nombre_vue2"),
+            "fields": ("image2", "nom2", "contenu2", "auteur2", "nombre_commentaire2", "nombre_vue2"),
             "description": "Deuxième article du blog"
         }),
         ("Blog 3", {
-            "fields": ("image3", "nom3", "contenu3", "auteur3", "date3", "nombre_commentaire3", "nombre_vue3"),
+            "fields": ("image3", "nom3", "contenu3", "auteur3", "nombre_commentaire3", "nombre_vue3"),
             "description": "Troisième article du blog"
         }),
     )
@@ -587,7 +592,7 @@ class TestimonialAdmin(admin.ModelAdmin):
     # Organisation des champs dans le formulaire d’édition
     fieldsets = (
         ("Section principale", {
-            "fields": ("titre", "sousTitre"),
+            "fields": ("titre", "sousTitre","image"),
             "description": "Informations générales de la section Témoignages"
         }),
         ("Témoignage 1", {
@@ -647,7 +652,6 @@ class ClientAdmin(admin.ModelAdmin):
 class VideoAdmin(admin.ModelAdmin):
     # Colonnes affichées dans la liste
     list_display = ("id", "video")
-
     # Champs de recherche
     search_fields = ("video",)
 

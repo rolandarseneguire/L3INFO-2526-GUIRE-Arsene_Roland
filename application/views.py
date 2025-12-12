@@ -9,7 +9,7 @@ from django.shortcuts import render, get_object_or_404
 
 def index(request):
     context = {
-        "slider": Slider.objects.all(),
+        "slider": Slider.objects.first(),
         "aboutaccueil": Aboutaccueil.objects.first(),
         "service": Service.objects.first(),
         "feature": Feature.objects.first(),
@@ -28,14 +28,14 @@ def index(request):
 def about(request):
     # Récupération des données dynamiques
     banner = get_object_or_404(Banner, page="about")   # Banner spécifique à la page About
-    about_section = Aboutaccueil.objects.all()      # Section About
+    about_section = Aboutaccueil.objects.first()      # Section About
     team_section = Team.objects.first()                # Section Team
     testimonial_section = Testimonial.objects.first()  # Témoignages
     client_section = Client.objects.first()            # Clients
 
     context = {
         "banner": banner,
-        "about": about_section,
+        "aboutaccueil": about_section,
         "team": team_section,
         "testimonial": testimonial_section,
         "client": client_section,
@@ -56,7 +56,7 @@ def services(request):
 
     context = {
         "banner": banner,
-        "about_X": about_section,
+        "aboutaccueil": about_section,
         "service": service_section,
         "feature": feature_section,
         "testimonial": testimonial_section,
@@ -78,7 +78,7 @@ def services_detail(request):
 
     context = {
         "banner": banner,
-        "service_detail": service_detail,
+        "servicedetail": service_detail,
         "join": join,
     }
     return render(request, "application/services-detail.html", context)
@@ -90,18 +90,18 @@ def gallery(request):
     banner = get_object_or_404(Banner, page="gallery")
 
     # Section Portfolio (galerie des projets)
-    portfolio_items = Portfolio.objects.all()
+    portfolio_items = Portfolio.objects.first()
 
     # Section Aboutaccueil (utilisée dans about_X.html)
     about_section = Aboutaccueil.objects.first()
 
     # Témoignages
-    testimonial_section = Testimonial.objects.all()
+    testimonial_section = Testimonial.objects.first()
 
     context = {
         "banner": banner,
-        "portfolio_items": portfolio_items,
-        "About_X": about_section,
+        "portfolio": portfolio_items,
+        "aboutaccueil": about_section,
         "testimonial": testimonial_section,
     }
     return render(request, "application/gallery.html", context)
@@ -113,15 +113,15 @@ def team(request):
     banner = get_object_or_404(Banner, page="team")
 
     # Section Team (liste des membres)
-    team_members = Team.objects.all()
+    team_members = Team.objects.first()
 
     # Témoignages
-    testimonials = Testimonial.objects.all()
+    testimonials = Testimonial.objects.first()
 
     context = {
         "banner": banner,
-        "team_members": team_members,
-        "testimonials": testimonials,
+        "team": team_members,
+        "testimonial": testimonials,
     }
     return render(request, "application/team.html", context)
 
@@ -132,15 +132,15 @@ def pricing(request):
     banner = get_object_or_404(Banner, page="pricing")
 
     # Section Pricing (plans tarifaires)
-    pricing_items = Pricing.objects.all()
+    pricing_items = Pricing.objects.first()
 
     # Témoignages
-    testimonials = Testimonial.objects.all()
+    testimonials = Testimonial.objects.first()
 
     context = {
         "banner": banner,
-        "pricing_items": pricing_items,
-        "testimonials": testimonials,
+        "pricing": pricing_items,
+        "testimonial": testimonials,
     }
     return render(request, "application/pricing.html", context)
 

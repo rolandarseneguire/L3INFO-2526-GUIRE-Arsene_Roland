@@ -1,6 +1,5 @@
 from django.db import models
-class Slider(models.Model):
-    image = models.ImageField(upload_to='images/Slider/')
+
 class Slider(models.Model):
 #Slider1
     image1 = models.ImageField(upload_to='images/Slider/')
@@ -222,7 +221,6 @@ class Pricing(models.Model):
 
 
       niveau3= models.CharField(max_length=100)
-
       prix3 = models.CharField(max_length=100)
       nombre_projet3 = models.CharField(max_length=100)
       espace3 = models.CharField(max_length=100)
@@ -316,12 +314,14 @@ class Client(models.Model):
 
      def __str__(self):
          return f"{self.titre} {self.sousTitre}"
+
 class Video(models.Model):
-    video= models.FileField(upload_to='Video/video/')
-    class Meta:
-        db_table = 'video'
-    def __str__(self):
-        return f"{self.video}"
+      video = models.FileField(upload_to='Video/video/', null=True, blank=True, default='')
+
+      class Meta:
+            db_table = 'video'
+      def __str__(self):
+          return f"{self.video}"
 
 
 
